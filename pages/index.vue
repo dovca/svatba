@@ -1,36 +1,34 @@
 <template>
   <Intro />
-  <div class="container max-w-2xl mt-12 pb-20 space-y-12 text-xl">
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt numquam quasi rerum! A accusantium aperiam
-      asperiores at dicta, dignissimos ea eum libero minus mollitia pariatur perferendis quaerat quasi rerum tenetur
-      unde vitae voluptatum. Aliquid architecto at commodi dolorem eaque ipsum, nihil officia omnis quisquam quo.
-      Accusantium, beatae cumque deserunt dolorum ea error est modi natus nulla odit officia pariatur perferendis
-      perspiciatis possimus qui reiciendis similique tempora tempore temporibus voluptates? Architecto atque cum,
-      doloribus ea eos expedita, explicabo facilis illum iste minima modi, perspiciatis placeat quis similique
-      voluptate. Commodi dolore doloremque eaque earum excepturi exercitationem iusto odit officiis omnis sequi,
-      voluptatem.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt numquam quasi rerum! A accusantium aperiam
-      asperiores at dicta, dignissimos ea eum libero minus mollitia pariatur perferendis quaerat quasi rerum tenetur
-      unde vitae voluptatum. Aliquid architecto at commodi dolorem eaque ipsum, nihil officia omnis quisquam quo.
-      Accusantium, beatae cumque deserunt dolorum ea error est modi natus nulla odit officia pariatur perferendis
-      perspiciatis possimus qui reiciendis similique tempora tempore temporibus voluptates? Architecto atque cum,
-      doloribus ea eos expedita, explicabo facilis illum iste minima modi, perspiciatis placeat quis similique
-      voluptate. Commodi dolore doloremque eaque earum excepturi exercitationem iusto odit officiis omnis sequi,
-      voluptatem.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt numquam quasi rerum! A accusantium aperiam
-      asperiores at dicta, dignissimos ea eum libero minus mollitia pariatur perferendis quaerat quasi rerum tenetur
-      unde vitae voluptatum. Aliquid architecto at commodi dolorem eaque ipsum, nihil officia omnis quisquam quo.
-      Accusantium, beatae cumque deserunt dolorum ea error est modi natus nulla odit officia pariatur perferendis
-      perspiciatis possimus qui reiciendis similique tempora tempore temporibus voluptates? Architecto atque cum,
-      doloribus ea eos expedita, explicabo facilis illum iste minima modi, perspiciatis placeat quis similique
-      voluptate. Commodi dolore doloremque eaque earum excepturi exercitationem iusto odit officiis omnis sequi,
-      voluptatem.
-    </p>
+  <div class="container max-w-2xl mt-32 pb-20 space-y-32 text-xl">
+    <div class="space-y-12">
+      <p>
+        <span class="text-3xl">Ahoj!</span> zveme tě na naši svatbu, kterou společně oslavíme na nádherném statku mezi
+        loukami a lesy české Vysočiny. Bude tancování, hry, jídlo, pití a samozřejmě spousta zábavy 🥳
+      </p>
+      <p>Protože je Lhotka skutečně v srdci přírody, připravili jsme mapku, která ti ukáže, jak se k nám dostat:</p>
+      <Map />
+    </div>
+    <div class="space-y-12">
+      <p>
+        Organizovat svatbu není lehký úkol a proto tě chceme poprosit o vyplnění formuláře, kterým nám v plánování
+        nesmírně pomůžeš.
+      </p>
+      <Form />
+    </div>
+    <div class="space-y-12">
+      <p>
+        Dress code je volný, ale rádi bychom, aby se všichni cítili pohodlně a slavnostně. Vhodné budou světlejší barvy.
+      </p>
+      <p>
+        Na Lhotce není moc dobrý telefonní signál, funguje jenom T&zwj;-&zwj;Mobile. V případě nouze můžete volat
+        ženichovi na číslo
+        <a href="tel:721410712">721&nbsp;410&nbsp;712</a>.
+      </p>
+    </div>
+    <div>
+      <p class="text-center text-4xl">Těšíme se! 👋</p>
+    </div>
   </div>
 </template>
 
