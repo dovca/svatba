@@ -6,6 +6,7 @@ export default {
     extend: {
       colors: {
         background: "#fffdfa",
+        "warm-green": "#9dc05e",
       },
       fontFamily: {
         sans: ["Hubballi", "sans-serif"],

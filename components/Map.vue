@@ -1,11 +1,11 @@
 <template>
-  <div>
-    <div ref="mapWrapper" class="w-full aspect-square" />
-  </div>
+  <div ref="mapWrapper" class="w-full aspect-square" />
 </template>
 
 <script setup lang="ts">
+import { h, render } from "vue";
 import { Loader } from "@googlemaps/js-api-loader";
+import MapMarker from "~/components/MapMarker.vue";
 
 const config = useRuntimeConfig();
 
@@ -33,10 +33,14 @@ onMounted(async () => {
     disableDefaultUI: true,
   });
 
+  const markerVNode = h(MapMarker, "Lhotka");
+  const markerWrapper = document.createElement("div");
+  render(markerVNode, markerWrapper);
+
   const marker = new AdvancedMarkerElement({
     map,
     position: { lat: 49.3865674, lng: 15.0149713 },
-    title: "Lhotka",
+    content: markerWrapper,
   });
 
   marker.addListener("click", () => {

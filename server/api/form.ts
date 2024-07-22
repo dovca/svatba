@@ -16,7 +16,7 @@ export default defineEventHandler(async (event) => {
 
     await transport.sendMail({
       from: '"David Ovčačík" <david.ovcacik@gmail.com>',
-      to: "david.ovcacik@gmail.com, schneiderovaev@gmail.com",
+      to: "david.ovcacik+svatba@gmail.com, schneiderovaev+svatba@gmail.com",
       subject: "Noví svatebčani",
       html: `
       <h1>Noví svatebčani</h1>
@@ -50,7 +50,10 @@ export default defineEventHandler(async (event) => {
       </table>
     `,
     });
+
+    return { message: "OK" };
   } catch (error) {
     console.error(error);
+    throw createError({ status: 500, message: "Failed to send email.", cause: error });
   }
 });
