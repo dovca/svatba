@@ -1,7 +1,7 @@
 <template>
   <div ref="el" class="h-dvh w-full mix-blend-multiply invisible pointer-events-none">
     <div ref="textWrapper" class="fixed h-dvh w-full -z-10">
-      <NuxtImg
+      <img
         ref="text"
         src="/intro_text.png"
         alt="Eva a David budou mít svatbu 7. září 2024 ve 13h, areál Lhotka, Lidmaň 395 01"
@@ -22,7 +22,7 @@ import type { ComponentPublicInstance } from "vue";
 
 const el = ref<HTMLElement | null>(null);
 const textWrapper = ref<HTMLElement | null>(null);
-const text = ref<ComponentPublicInstance | null>(null);
+const text = ref<HTMLElement | null>(null);
 
 function animateFlower(target: GSAPTweenTarget): GSAPAnimation {
   return gsap.from(target, {
@@ -51,8 +51,8 @@ function setupGraphicsAnimation() {
     .add(staggered(["#kytka1l", "#kytka2l", "#kytka3l"].map(animateFlower), 0.2), "kytky")
     .addLabel("fadeIn")
     .from("#ilustrace", { opacity: 0, duration: 1.5, clearProps: true }, "fadeIn-=0.5")
-    .from(text.value.$el, { opacity: 0, duration: 2 }, "fadeIn-=1")
-    .from(text.value.$el, { yPercent: 2, duration: 1.5, ease: "power2.out" }, "<")
+    .from(text.value, { opacity: 0, duration: 2 }, "fadeIn-=1")
+    .from(text.value, { yPercent: 2, duration: 1.5, ease: "power2.out" }, "<")
     .add(() => {
       gsap.set("#hory, #cesta, #koblizci, #kytky", { display: "none" });
     });
