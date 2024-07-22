@@ -32,7 +32,7 @@ export default defineEventHandler(async (event) => {
           </tr>
           <tr>
             <td>Vegetarián:</td>
-            <td>${body.vegetaraian ? "Ano" : "Ne"}</td>
+            <td>${body.vegetarian ? "Ano" : "Ne"}</td>
           </tr>
           <tr>
             <td>Bez lepku:</td>
