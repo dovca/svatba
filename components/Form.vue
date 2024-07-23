@@ -41,8 +41,9 @@
         <ExpandTransition>
           <div v-if="form.accommodation && !vipMode">
             <p class="pt-6">
-              Ubytování ze soboty na neděli včetně snídaně je možné za {{ ACCOMMODATION_PER_PERSON }} Kč/osobu. Kdybyste
-              chtěli přijet už v&nbsp;pátek a&nbsp;pomoct nám s&nbsp;přípravou, dejte vědět :)
+              Ubytování ze soboty na neděli včetně snídaně je možné za {{ ACCOMMODATION_PER_PERSON }} Kč/osobu.
+              Ubytování pro vás objednáme, prosíme o zaslání peněz přes QR kód nebo na 1286961011/3030. Kdybyste chtěli
+              přijet už v&nbsp;pátek a&nbsp;pomoct nám s&nbsp;přípravou, dejte vědět :)
             </p>
             <img :src="qrCode" alt="QR Platba" class="mx-auto" />
           </div>
